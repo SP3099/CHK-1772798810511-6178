@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Input Field Styles -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+
+    <!-- Chip Styles -->
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="chipCornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.App.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/surface_variant</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="checkedIconVisible">true</item>
+    </style>
+
+    <!-- FAB Styles -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <!-- Toolbar Styles -->
+    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Bottom Navigation Styles -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/primary</item>
+        <item name="android:background">@color/surface</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Dialog Styles -->
+    <style name="Widget.App.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button.Text</item>
+    </style>
+
+    <!-- Progress Indicator Styles -->
+    <style name="Widget.App.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">@color/primary</item>
+        <item name="trackColor">@color/primary_light</item>
+    </style>
+
+    <!-- Divider Style -->
+    <style name="Widget.App.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+</resources>
