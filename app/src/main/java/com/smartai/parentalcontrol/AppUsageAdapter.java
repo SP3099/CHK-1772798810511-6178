@@ -1,8 +1,12 @@
 package com.smartai.parentalcontrol;
 
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,6 +35,12 @@ public class AppUsageAdapter extends RecyclerView.Adapter<AppUsageAdapter.ViewHo
         StudentDashboardActivity.AppUsage appUsage = appUsageList.get(position);
         holder.appNameTextView.setText(appUsage.getAppName());
         holder.usageTimeTextView.setText(appUsage.getUsageTime());
+        
+        if (appUsage.getAppIcon() != null) {
+            holder.appIconImageView.setImageDrawable(appUsage.getAppIcon());
+        } else {
+            holder.appIconImageView.setImageResource(android.R.drawable.sym_def_app_icon);
+        }
     }
 
     @Override
@@ -39,11 +49,13 @@ public class AppUsageAdapter extends RecyclerView.Adapter<AppUsageAdapter.ViewHo
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView appIconImageView;
         TextView appNameTextView;
         TextView usageTimeTextView;
 
         ViewHolder(View itemView) {
             super(itemView);
+            appIconImageView = itemView.findViewById(R.id.appIconImageView);
             appNameTextView = itemView.findViewById(R.id.appNameTextView);
             usageTimeTextView = itemView.findViewById(R.id.usageTimeTextView);
         }

@@ -71,10 +71,17 @@ public class StudentDashboardActivity extends AppCompatActivity {
     public static class AppUsage {
         private String appName;
         private String usageTime;
+        private android.graphics.drawable.Drawable appIcon;
 
         public AppUsage(String appName, String usageTime) {
             this.appName = appName;
             this.usageTime = usageTime;
+        }
+
+        public AppUsage(String appName, String usageTime, android.graphics.drawable.Drawable appIcon) {
+            this.appName = appName;
+            this.usageTime = usageTime;
+            this.appIcon = appIcon;
         }
 
         public String getAppName() {
@@ -83,6 +90,14 @@ public class StudentDashboardActivity extends AppCompatActivity {
 
         public String getUsageTime() {
             return usageTime;
+        }
+
+        public android.graphics.drawable.Drawable getAppIcon() {
+            return appIcon;
+        }
+
+        public void setAppIcon(android.graphics.drawable.Drawable appIcon) {
+            this.appIcon = appIcon;
         }
     }
 }
