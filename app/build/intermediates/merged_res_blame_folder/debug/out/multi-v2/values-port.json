@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-39:/values-port/values-port.xml",
+            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-35:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\9d2c2bf3e24c289b790e89e25dee71c7\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",

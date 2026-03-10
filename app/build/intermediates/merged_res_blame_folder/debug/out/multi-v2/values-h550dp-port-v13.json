@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-39:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-35:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\e614500c17c99271de9495af5b4d5348\\transformed\\material-1.9.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",

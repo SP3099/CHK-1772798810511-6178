@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <color name="accent">#FF5722</color>
-    <color name="accent_dark">#E64A19</color>
-    <color name="accent_light">#FFCCBC</color>
-    <color name="background">#FAFAFA</color>
+    <color name="accent">#FF9800</color>
+    <color name="accent_dark">#F57C00</color>
+    <color name="background">#F5F5F5</color>
     <color name="black">#000000</color>
-    <color name="border">#BDBDBD</color>
+    <color name="card_background">#FFFFFF</color>
     <color name="divider">#E0E0E0</color>
     <color name="error">#F44336</color>
     <color name="ic_launcher_background">#3DDC84</color>
     <color name="info">#2196F3</color>
+    <color name="lock_color">#F44336</color>
+    <color name="parent_color">#2196F3</color>
     <color name="primary">#2196F3</color>
     <color name="primary_dark">#1976D2</color>
     <color name="primary_light">#BBDEFB</color>
+    <color name="student_color">#9C27B0</color>
     <color name="success">#4CAF50</color>
     <color name="surface">#FFFFFF</color>
-    <color name="surface_variant">#F5F5F5</color>
     <color name="text_hint">#BDBDBD</color>
     <color name="text_on_primary">#FFFFFF</color>
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
-    <color name="transparent">#00000000</color>
-    <color name="warning">#FFC107</color>
+    <color name="warning">#FF9800</color>
     <color name="white">#FFFFFF</color>
-    <dimen name="button_corner_radius">8dp</dimen>
-    <dimen name="button_padding_horizontal">24dp</dimen>
-    <dimen name="button_padding_vertical">12dp</dimen>
-    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="card_padding">16dp</dimen>
-    <dimen name="icon_size_large">32dp</dimen>
-    <dimen name="icon_size_medium">24dp</dimen>
-    <dimen name="icon_size_small">16dp</dimen>
-    <dimen name="icon_size_xl">48dp</dimen>
+    <dimen name="card_radius">12dp</dimen>
+    <dimen name="icon_size_large">64dp</dimen>
+    <dimen name="icon_size_medium">48dp</dimen>
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_xl">96dp</dimen>
     <dimen name="spacing_large">24dp</dimen>
     <dimen name="spacing_medium">16dp</dimen>
     <dimen name="spacing_small">8dp</dimen>
     <dimen name="spacing_xl">32dp</dimen>
     <dimen name="spacing_xs">4dp</dimen>
-    <dimen name="text_size_body">16sp</dimen>
-    <dimen name="text_size_caption">14sp</dimen>
-    <dimen name="text_size_headline">32sp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_display">28sp</dimen>
+    <dimen name="text_size_heading">24sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
     <dimen name="text_size_small">12sp</dimen>
-    <dimen name="text_size_subtitle">20sp</dimen>
-    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
     <string name="app_name">Smart AI Parental Control</string>
     <string name="gcm_defaultSenderId" translatable="false">395101330754</string>
     <string name="google_api_key" translatable="false">AIzaSyDT_ElpujbPC3avfEVzeIzCf_0ljo2lFrI</string>
@@ -51,6 +52,22 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDT_ElpujbPC3avfEVzeIzCf_0ljo2lFrI</string>
     <string name="google_storage_bucket" translatable="false">smartparentalcontrolsystem.firebasestorage.app</string>
     <string name="project_id" translatable="false">smartparentalcontrolsystem</string>
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="ButtonStyle.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="CardStyle">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+    </style>
     <style name="TextAppearance.App.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/text_primary</item>
@@ -72,6 +89,29 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Body" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    <style name="TextAppearance.Caption" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    <style name="TextAppearance.Display" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_display</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Heading" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_heading</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="Theme.SmartAIParentalControlSystem" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
@@ -105,12 +145,6 @@
         
         <item name="materialButtonStyle">@style/Widget.App.Button</item>
         <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
-    </style>
-    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="itemIconTint">@color/primary</item>
-        <item name="itemTextColor">@color/primary</item>
-        <item name="android:background">@color/surface</item>
-        <item name="elevation">8dp</item>
     </style>
     <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">8dp</item>
@@ -157,47 +191,5 @@
         <item name="strokeWidth">1dp</item>
         <item name="strokeColor">@color/divider</item>
         <item name="contentPadding">16dp</item>
-    </style>
-    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Action">
-        <item name="chipBackgroundColor">@color/primary_light</item>
-        <item name="android:textColor">@color/primary_dark</item>
-        <item name="chipCornerRadius">16dp</item>
-    </style>
-    <style name="Widget.App.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
-        <item name="chipBackgroundColor">@color/surface_variant</item>
-        <item name="android:textColor">@color/text_primary</item>
-        <item name="chipCornerRadius">16dp</item>
-        <item name="checkedIconVisible">true</item>
-    </style>
-    <style name="Widget.App.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
-        <item name="indicatorColor">@color/primary</item>
-        <item name="trackColor">@color/primary_light</item>
-    </style>
-    <style name="Widget.App.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button.Text</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button.Text</item>
-    </style>
-    <style name="Widget.App.Divider">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:background">@color/divider</item>
-    </style>
-    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="backgroundTint">@color/accent</item>
-        <item name="tint">@color/white</item>
-        <item name="elevation">6dp</item>
-    </style>
-    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxCornerRadiusTopStart">8dp</item>
-        <item name="boxCornerRadiusTopEnd">8dp</item>
-        <item name="boxCornerRadiusBottomStart">8dp</item>
-        <item name="boxCornerRadiusBottomEnd">8dp</item>
-        <item name="boxStrokeColor">@color/primary</item>
-        <item name="hintTextColor">@color/primary</item>
-    </style>
-    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
-        <item name="titleTextColor">@color/white</item>
-        <item name="subtitleTextColor">@color/white</item>
-        <item name="android:elevation">4dp</item>
     </style>
 </resources>

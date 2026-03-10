@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-39:/values-v21/values-v21.xml",
+            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-35:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\e614500c17c99271de9495af5b4d5348\\transformed\\material-1.9.0\\res\\values-v21\\values-v21.xml",
@@ -23,22 +23,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\8fd419bc47c37adaa7c03bef4b37269c\\transformed\\core-1.15.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\14e4591067b79fd384e3d2a25740c526\\transformed\\jetified-credentials-play-services-auth-1.2.2\\res\\values-v21\\values-v21.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,173,237,304,368,484,610,736,864,1036",
-                        "endLines": "2,3,4,5,6,7,8,9,12,17",
-                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "168,232,299,363,479,605,731,859,1031,1383"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "543"
                     },
                     "to": {
-                        "startLines": "2,17,18,19,347,348,349,350,545,548",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,1408,1472,1539,25558,25674,25800,25926,37710,37882",
-                        "endLines": "2,17,18,19,347,348,349,350,547,552",
-                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "168,1467,1534,1598,25669,25795,25921,26049,37877,38229"
+                        "startLines": "510",
+                        "startColumns": "4",
+                        "startOffsets": "34834",
+                        "endLines": "517",
+                        "endColumns": "12",
+                        "endOffsets": "35322"
                     }
                 },
                 {
@@ -61,22 +61,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\f5c6ba65e42bf50189ef4b53e9129ba1\\transformed\\jetified-credentials-play-services-auth-1.6.0-beta01\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\c039bbe8e7b79a30b87ea2ded65c1fa4\\transformed\\core-1.9.0\\res\\values-v21\\values-v21.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "543"
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,237,304,368,484,610,736,864,1036",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "168,232,299,363,479,605,731,859,1031,1383"
                     },
                     "to": {
-                        "startLines": "510",
-                        "startColumns": "4",
-                        "startOffsets": "34834",
-                        "endLines": "517",
-                        "endColumns": "12",
-                        "endOffsets": "35322"
+                        "startLines": "2,17,18,19,347,348,349,350,545,548",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,1408,1472,1539,25558,25674,25800,25926,37710,37882",
+                        "endLines": "2,17,18,19,347,348,349,350,547,552",
+                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "168,1467,1534,1598,25669,25795,25921,26049,37877,38229"
                     }
                 }
             ]

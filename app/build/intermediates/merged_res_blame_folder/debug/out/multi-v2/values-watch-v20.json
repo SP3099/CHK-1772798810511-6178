@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-39:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-35:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\793d13b251ac902090fffce0f04e47da\\transformed\\jetified-play-services-auth-21.1.1\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\b4a7743776aee909b28c87fc8c822892\\transformed\\jetified-play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

@@ -38,13 +38,6 @@
     <string name="bottomsheet_action_expand_halfway">Tam genişləndirin</string>
     <string name="bottomsheet_drag_handle_clicked">Dəstəyə iki dəfə toxunun</string>
     <string name="bottomsheet_drag_handle_content_description">Dəstək</string>
-    <string msgid="881409763997275156" name="call_notification_answer_action">"Cavab verin"</string>
-    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"İmtina edin"</string>
-    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Dəstəyi asın"</string>
-    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Gələn zəng"</string>
-    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Davam edən zəng"</string>
-    <string msgid="59049573811482460" name="call_notification_screening_text">"Gələn zəng göstərilir"</string>
     <string name="character_counter_content_description">%1$d/%2$d simvol daxil edilib</string>
     <string name="character_counter_overflowed_content_description">Simvol limiti %1$d/%2$d dəyərini keçdi</string>
     <string name="clear_text_end_icon_content_description">Mətni silin</string>
@@ -66,24 +59,12 @@
     <string name="common_open_on_phone">Telefonda açın</string>
     <string name="common_signin_button_text">Daxil olun</string>
     <string name="common_signin_button_text_long">Google ilə daxil olun</string>
-    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Parol istifadə edin"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Link buferə kopyalandı"</string>
-    <string msgid="4776854077120974966" name="default_error_msg">"Naməlum xəta"</string>
     <string name="error_icon_content_description">Xəta</string>
     <string name="exposed_dropdown_menu_content_description">Açılan menyunu göstərin</string>
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Linki kopyalayın"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Brauzerdə açın"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Linki paylaşın"</string>
-    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Barmaq izi sensoruna klikləyin"</string>
-    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Barmaq izi avadanlığı əlçatan deyil."</string>
-    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Bu cihazda barmaq izi sensoru yoxdur"</string>
-    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Həddən çox cəhd oldu. Sonra sınayın."</string>
-    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Barmaq izi qeydə alınmayıb."</string>
-    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Barmaq izi əməliyyatı istifadəçi tərəfindən ləğv edildi."</string>
-    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Tanınmır"</string>
-    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"PIN, model və ya parol ayarlanmayıb."</string>
-    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Bu cihaz PIN, model və ya parolu dəstəkləmir."</string>
-    <string msgid="7309881387583143581" name="generic_error_user_canceled">"İstifadəçi doğrulamanı ləğv edib."</string>
     <string name="icon_content_description">Dialoq ikonası</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Gündüz və ya axşam seçin</string>
