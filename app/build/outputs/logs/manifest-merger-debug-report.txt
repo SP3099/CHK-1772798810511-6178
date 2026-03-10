@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:1-99:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\patil\.gradle\caches\transforms-3\e614500c17c99271de9495af5b4d5348\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\patil\.gradle\caches\transforms-3\04a56928c57ec4b5b8be7640a296d857\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\patil\.gradle\caches\transforms-3\ea0242079f60fac09be8cdcaa3195f64\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -72,13 +72,49 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\patil\.gradle\c
 		INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:22.0.1] C:\Users\patil\.gradle\caches\transforms-3\2930088e64a425a102ba3105d55fbab7\transformed\jetified-firebase-database-22.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:22.0.1] C:\Users\patil\.gradle\caches\transforms-3\2930088e64a425a102ba3105d55fbab7\transformed\jetified-firebase-database-22.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\patil\.gradle\caches\transforms-3\d101708f57183a1998791ae925760910\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\patil\.gradle\caches\transforms-3\d101708f57183a1998791ae925760910\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:7:5-8:47
+	tools:ignore
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:8:9-44
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:7:22-75
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:9:22-74
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:10:5-11:53
+	tools:ignore
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:11:9-50
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:10:22-74
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:12:22-75
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:13:22-74
 application
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:4:5-19:19
-INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:4:5-19:19
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:15:5-97:19
+INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:15:5-97:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\patil\.gradle\caches\transforms-3\e614500c17c99271de9495af5b4d5348\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\patil\.gradle\caches\transforms-3\e614500c17c99271de9495af5b4d5348\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\patil\.gradle\caches\transforms-3\04a56928c57ec4b5b8be7640a296d857\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -128,33 +164,137 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\patil\.gradle\c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] C:\Users\patil\.gradle\caches\transforms-3\8fd419bc47c37adaa7c03bef4b37269c\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:18:9-41
 	android:roundIcon
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:10:9-66
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:21:9-66
 activity#com.smartai.parentalcontrol.MainActivity
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:11:9-18:20
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:24:9-31:20
 	android:exported
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:13:13-36
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:12:13-41
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:14:13-17:29
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:29:27-74
+activity#com.smartai.parentalcontrol.LoginActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:35:13-42
+activity#com.smartai.parentalcontrol.RegisterActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:37:9-39:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:38:13-45
+activity#com.smartai.parentalcontrol.RoleSelectionActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:40:9-42:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:41:13-50
+activity#com.smartai.parentalcontrol.ParentDashboardActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:46:13-52
+activity#com.smartai.parentalcontrol.StudentDashboardActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:48:9-50:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:50:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:49:13-53
+activity#com.smartai.parentalcontrol.LimitManagementActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:53:9-55:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:54:13-52
+activity#com.smartai.parentalcontrol.RequestsActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:56:9-58:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:57:13-45
+activity#com.smartai.parentalcontrol.RequestTimeActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:61:9-63:40
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:62:13-48
+activity#com.smartai.parentalcontrol.BlockOverlayActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:66:9-70:49
+	android:excludeFromRecents
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:70:13-46
+	android:launchMode
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:69:13-44
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:68:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:67:13-49
+activity#com.smartai.parentalcontrol.DeviceLockedActivity
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:71:9-75:49
+	android:excludeFromRecents
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:75:13-46
+	android:launchMode
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:74:13-44
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:73:13-37
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:72:13-49
+service#com.smartai.parentalcontrol.UsageTrackingService
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:78:9-82:56
+	android:enabled
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:80:13-35
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:81:13-37
+	android:foregroundServiceType
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:82:13-53
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:79:13-49
+receiver#com.smartai.parentalcontrol.InstallReceiver
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:85:9-95:20
+	android:enabled
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:87:13-35
+	android:exported
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:88:13-36
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:86:13-44
+intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+action:name:android.intent.action.PACKAGE_REPLACED+data:scheme:package
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:89:13-94:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:90:17-78
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:90:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:91:17-80
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:91:25-77
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:92:17-81
+	android:name
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:92:25-78
+data
+ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:93:17-50
+	android:scheme
+		ADDED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml:93:23-47
 uses-sdk
 INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
@@ -293,14 +433,6 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\patil\.gradle\c
 		INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\patil\OneDrive\Desktop\SmartParentControl\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-database:22.0.1] C:\Users\patil\.gradle\caches\transforms-3\2930088e64a425a102ba3105d55fbab7\transformed\jetified-firebase-database-22.0.1\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-database:22.0.1] C:\Users\patil\.gradle\caches\transforms-3\2930088e64a425a102ba3105d55fbab7\transformed\jetified-firebase-database-22.0.1\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\patil\.gradle\caches\transforms-3\d101708f57183a1998791ae925760910\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\patil\.gradle\caches\transforms-3\d101708f57183a1998791ae925760910\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:7:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:25:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-database:22.0.1] C:\Users\patil\.gradle\caches\transforms-3\2930088e64a425a102ba3105d55fbab7\transformed\jetified-firebase-database-22.0.1\AndroidManifest.xml:22:5-79
@@ -335,14 +467,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:39:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:24.0.1] C:\Users\patil\.gradle\caches\transforms-3\71c4e3be16c6cf856edd188219282d09\transformed\jetified-firebase-auth-24.0.1\AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents

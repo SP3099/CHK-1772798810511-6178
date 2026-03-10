@@ -8,7 +8,13 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
+    <!-- Required Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
@@ -31,6 +37,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.SmartAIParentalControlSystem" >
+
+        <!-- Main Activity -->
         <activity
             android:name="com.smartai.parentalcontrol.MainActivity"
             android:exported="true" >
@@ -40,6 +48,72 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Authentication Activities -->
+        <activity
+            android:name="com.smartai.parentalcontrol.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smartai.parentalcontrol.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smartai.parentalcontrol.RoleSelectionActivity"
+            android:exported="false" />
+
+        <!-- Dashboard Activities -->
+        <activity
+            android:name="com.smartai.parentalcontrol.ParentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smartai.parentalcontrol.StudentDashboardActivity"
+            android:exported="false" />
+
+        <!-- Parent Activities -->
+        <activity
+            android:name="com.smartai.parentalcontrol.LimitManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.smartai.parentalcontrol.RequestsActivity"
+            android:exported="false" />
+
+        <!-- Student Activities -->
+        <activity
+            android:name="com.smartai.parentalcontrol.RequestTimeActivity"
+            android:exported="false" />
+
+        <!-- Blocking Activities -->
+        <activity
+            android:name="com.smartai.parentalcontrol.BlockOverlayActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.smartai.parentalcontrol.DeviceLockedActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask" />
+
+        <!-- Foreground Service -->
+        <service
+            android:name="com.smartai.parentalcontrol.UsageTrackingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Broadcast Receiver for App Installation -->
+        <receiver
+            android:name="com.smartai.parentalcontrol.InstallReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

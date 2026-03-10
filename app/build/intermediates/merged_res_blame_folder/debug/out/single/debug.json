@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_item_app_limit.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/item_app_limit.xml"
+    },
+    {
         "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_requests.xml.flat",
         "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_requests.xml"
     },
@@ -24,12 +28,24 @@
         "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_request_time.xml"
     },
     {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_limit_management.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_limit_management.xml"
+    },
+    {
         "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_role_selection.xml.flat",
         "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_role_selection.xml"
     },
     {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_device_locked.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_device_locked.xml"
+    },
+    {
         "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_login.xml.flat",
         "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_block_overlay.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_block_overlay.xml"
     },
     {
         "merged": "com.smartai.parentalcontrol.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

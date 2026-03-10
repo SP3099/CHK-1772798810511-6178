@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.smartai.parentalcontrol" />
+                  <option name="mobileSdkAppId" value="1:395101330754:android:529eb31ced6015c3cdbcdb" />
+                  <option name="projectId" value="smartparentalcontrolsystem" />
+                  <option name="projectNumber" value="395101330754" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

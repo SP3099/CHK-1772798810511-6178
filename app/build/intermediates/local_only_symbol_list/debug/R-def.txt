@@ -46,6 +46,7 @@ dimen text_size_subtitle
 dimen text_size_title
 id appIconImageView
 id appNameTextView
+id appSpinner
 id approveButton
 id appsRecyclerView
 id btnGetStarted
@@ -55,6 +56,9 @@ id btnStudent
 id denyButton
 id emailEditText
 id emptyTextView
+id goBackButton
+id limitTextView
+id limitsRecyclerView
 id lockDeviceCard
 id loginButton
 id manageAppLimitsCard
@@ -66,13 +70,18 @@ id passwordEditText
 id reasonEditText
 id reasonTextView
 id registerButton
+id removeButton
 id requestExtraTimeButton
+id requestTimeButton
 id requestsRecyclerView
 id roleRadioGroup
 id screenTimeTextView
+id setLimitButton
 id studentNameTextView
 id studentRadioButton
 id submitButton
+id timeLimitSlider
+id timeLimitTextView
 id timeRequestedTextView
 id timestampTextView
 id tvTitle
@@ -80,6 +89,9 @@ id usageTimeTextView
 id viewRequestsCard
 id viewUsageCard
 id welcomeCard
+layout activity_block_overlay
+layout activity_device_locked
+layout activity_limit_management
 layout activity_login
 layout activity_main
 layout activity_parent_dashboard
@@ -88,6 +100,7 @@ layout activity_request_time
 layout activity_requests
 layout activity_role_selection
 layout activity_student_dashboard
+layout item_app_limit
 layout item_app_usage
 layout item_request
 mipmap ic_launcher
