@@ -1,8 +1,8 @@
 package com.smartai.parentalcontrol;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.card.MaterialCardView;
 
@@ -53,22 +53,26 @@ public class ParentDashboardActivity extends AppCompatActivity {
     }
 
     private void handleViewUsage() {
-        // TODO: Navigate to student usage activity
-        Toast.makeText(this, "View Student Usage", Toast.LENGTH_SHORT).show();
+        // Navigate to StudentDashboardActivity to view usage
+        Intent intent = new Intent(ParentDashboardActivity.this, StudentDashboardActivity.class);
+        startActivity(intent);
     }
 
     private void handleManageAppLimits() {
-        // TODO: Navigate to app limits management activity
-        Toast.makeText(this, "Manage App Limits", Toast.LENGTH_SHORT).show();
+        // Navigate to LimitManagementActivity
+        Intent intent = new Intent(ParentDashboardActivity.this, LimitManagementActivity.class);
+        startActivity(intent);
     }
 
     private void handleViewRequests() {
-        // TODO: Navigate to requests activity
-        Toast.makeText(this, "View Requests", Toast.LENGTH_SHORT).show();
+        // Navigate to RequestsActivity
+        Intent intent = new Intent(ParentDashboardActivity.this, RequestsActivity.class);
+        startActivity(intent);
     }
 
     private void handleLockDevice() {
-        // TODO: Implement device lock functionality
-        Toast.makeText(this, "Lock Device", Toast.LENGTH_SHORT).show();
+        // Navigate to DeviceLockedActivity
+        Intent intent = new Intent(ParentDashboardActivity.this, DeviceLockedActivity.class);
+        startActivity(intent);
     }
 }

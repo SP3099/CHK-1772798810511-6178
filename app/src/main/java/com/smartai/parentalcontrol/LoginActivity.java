@@ -3,49 +3,35 @@ package com.smartai.parentalcontrol;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.smartai.parentalcontrol.database.DatabaseHelper;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private static final String TAG = "LoginActivity";
+    
     private TextInputEditText emailEditText;
     private TextInputEditText passwordEditText;
     private Button loginButton;
     private Button registerButton;
 
-    private FirebaseAuth mAuth;
-    private DatabaseReference mDatabase;
-    private String userRole = "Parent"; // Default role from RoleSelectionActivity
+    private DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // Initialize Firebase
-        mAuth = FirebaseAuth.getInstance();
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        Log.d(TAG, "LoginActivity onCreate");
 
-        // Get role from intent (passed from RoleSelectionActivity)
-        Intent intent = getIntent();
-        if (intent != null && intent.hasExtra("role")) {
-            userRole = intent.getStringExtra("role");
-        }
+        // Initialize Database
+        databaseHelper = new DatabaseHelper(this);
 
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
@@ -75,79 +61,36 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // Disable button to prevent multiple clicks
-        loginButton.setEnabled(false);
+        Log.d(TAG, "Attempting login for: " + email);
 
-        // Login with Firebase Authentication
-        loginWithFirebase(email, password);
-    }
+        // Login with local database
+        DatabaseHelper.User user = databaseHelper.loginUser(email, password);
 
-    private void loginWithFirebase(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Login success
-                            FirebaseUser firebaseUser = mAuth.getCurrentUser();
-                            if (firebaseUser != null) {
-                                // Get user data from database
-                                getUserDataAndNavigate(firebaseUser.getUid());
-                            }
-                        } else {
-                            // Login failed
-                            loginButton.setEnabled(true);
-                            Toast.makeText(LoginActivity.this, 
-                                    "Login failed: " + task.getException().getMessage(), 
-                                    Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
-    }
-
-    private void getUserDataAndNavigate(String userId) {
-        mDatabase.child("users").child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                loginButton.setEnabled(true);
-                if (snapshot.exists()) {
-                    String name = snapshot.child("name").getValue(String.class);
-                    String email = snapshot.child("email").getValue(String.class);
-                    String role = snapshot.child("role").getValue(String.class);
-
-                    if (name != null && email != null && role != null) {
-                        Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-                        
-                        // Save user info to SharedPreferences
-                        SettingsActivity.saveUserInfo(LoginActivity.this, name, email, role);
-                        
-                        // Navigate to appropriate dashboard
-                        navigateToDashboard(role);
-                    } else {
-                        Toast.makeText(LoginActivity.this, "User data incomplete", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    Toast.makeText(LoginActivity.this, "User data not found", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                loginButton.setEnabled(true);
-                Toast.makeText(LoginActivity.this, 
-                        "Database error: " + error.getMessage(), 
-                        Toast.LENGTH_LONG).show();
-            }
-        });
+        if (user != null) {
+            Log.d(TAG, "Login successful");
+            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
+            
+            // Save user info to SharedPreferences
+            SettingsActivity.saveUserInfo(this, user.getName(), user.getEmail(), user.getRole());
+            
+            // Navigate to appropriate dashboard
+            navigateToDashboard(user.getRole());
+        } else {
+            Log.e(TAG, "Login failed");
+            Toast.makeText(this, "Invalid email or password", Toast.LENGTH_LONG).show();
+        }
     }
 
     private void navigateToDashboard(String role) {
+        Log.d(TAG, "Navigating to dashboard for role: " + role);
+        
         Intent intent;
         if (role.equals("Parent")) {
             intent = new Intent(LoginActivity.this, ParentDashboardActivity.class);
         } else {
             intent = new Intent(LoginActivity.this, StudentDashboardActivity.class);
         }
+        
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();

@@ -1,10 +1,10 @@
 package com.smartai.parentalcontrol;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -46,13 +46,13 @@ public class StudentDashboardActivity extends AppCompatActivity {
     }
 
     private void loadScreenTime() {
-        // TODO: Fetch actual screen time data
+        // TODO: Fetch actual screen time data from UsageStatsManager
         String screenTime = "2h 35m";
         screenTimeTextView.setText(screenTime);
     }
 
     private void loadUsedApps() {
-        // TODO: Fetch actual app usage data
+        // TODO: Fetch actual app usage data from UsageStatsManager
         List<AppUsage> appUsageList = new ArrayList<>();
         appUsageList.add(new AppUsage("YouTube", "45m"));
         appUsageList.add(new AppUsage("Instagram", "30m"));
@@ -64,8 +64,9 @@ public class StudentDashboardActivity extends AppCompatActivity {
     }
 
     private void handleRequestExtraTime() {
-        // TODO: Implement request extra time functionality
-        Toast.makeText(this, "Request sent to parent", Toast.LENGTH_SHORT).show();
+        // Navigate to RequestTimeActivity
+        Intent intent = new Intent(StudentDashboardActivity.this, RequestTimeActivity.class);
+        startActivity(intent);
     }
 
     public static class AppUsage {
