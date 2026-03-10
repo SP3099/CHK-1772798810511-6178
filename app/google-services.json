@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395101330754",
+    "project_id": "smartparentalcontrolsystem",
+    "storage_bucket": "smartparentalcontrolsystem.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395101330754:android:529eb31ced6015c3cdbcdb",
+        "android_client_info": {
+          "package_name": "com.smartai.parentalcontrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT_ElpujbPC3avfEVzeIzCf_0ljo2lFrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

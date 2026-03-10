@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_requests.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_requests.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_register.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_parent_dashboard.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_student_dashboard.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_student_dashboard.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_request_time.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_request_time.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_role_selection.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_role_selection.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_activity_login.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_item_app_usage.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/item_app_usage.xml"
+    },
+    {
+        "merged": "com.smartai.parentalcontrol.app-merged_res-41:/layout_item_request.xml.flat",
+        "source": "com.smartai.parentalcontrol.app-main-43:/layout/item_request.xml"
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.smartai.parentalcontrol.app-mergeDebugResources-39:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\patil\\.gradle\\caches\\transforms-3\\9d2c2bf3e24c289b790e89e25dee71c7\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}
